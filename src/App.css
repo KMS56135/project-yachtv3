@@ -1,9 +1,13 @@
 @import './assets/fonts/fonts.css';
 @import './component/Swiper/swiper.css';
 
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --white: #ffffff;
-    --zinc-300: #d4d4d8; 
+    --zinc-300: #d4d4d8;
+    --text-description: #a8a29e;
 
 }

@@ -13,18 +13,18 @@ const Carousel = () => {
   const images = [
     {
       src: about1,
-      title: 'Заголовок 1',
-      description: 'Описание 1',
+      title: 'Маршруты плавания',
+      description: 'Откройте для себя самые популярные маршруты плавания под парусом',
     },
     {
       src: about2,
-      title: 'Заголовок 2',
-      description: 'Описание 2',
+      title: 'Аренда яхты',
+      description: 'Родина дайвинга во Вьетнаме',
     },
     {
       src: about3,
-      title: 'Заголовок 3',
-      description: 'Описание 3',
+      title: 'События и мероприятия',
+      description: 'Чартеры для корпоративных мероприятий',
     },
   ];
 
@@ -45,10 +45,12 @@ const Carousel = () => {
       <div className="carousel-images">
         {images.map((image, index) => (
           <div key={index} className={`carousel-image ${index === activeIndex ? 'active' : ''}`}>
-            <img src={image.src} alt={image.title} />
+            <div className='carousel-image-wrapper'>
+                <img src={image.src} alt={image.title} />
+            </div>
             <div className="carousel-text">
-              <h2>{image.title}</h2>
-              <p>{image.description}</p>
+              <h2 className='carousel-title font-taviraj'>{image.title}</h2>
+              <p className='carousel-description'>{image.description}</p>
             </div>
           </div>
         ))}

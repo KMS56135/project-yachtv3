@@ -1,6 +1,7 @@
 import NavbarPanel from './component/Navbarpanel/Navbarpanel';
 import Swiper from './component/Swiper/Swiper';
 import Offers from './component/Offers/Offers';
+import Services from './component/Services/Services'
 import slide1 from './assets/images/Swiper/slide-1.jpg'
 import slide2 from './assets/images/Swiper/slide-2.jpg'
 import './App.css';
@@ -29,6 +30,7 @@ function App() {
       <NavbarPanel/>
       <Swiper items={items}/>
       <Offers/>
+      <Services/>
     </>
   );
 }

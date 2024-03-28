@@ -12,11 +12,15 @@ module.exports = {
       'desktop': '1200px',
       // => @media (min-width: 1200px)
     },
+    colors: {
+        bgServices: '#eef2ff',
+    },
+
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'serif'],
         taviraj: ['Taviraj', 'serif'],
-      }
+      },
     },
   },
   plugins: [],

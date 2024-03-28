@@ -1,0 +1,9 @@
+.services {
+    
+}
+
+.services__icon {
+    background-image: url(../../assets/images/Services/bed-alt.svg);
+    width: 33px;
+    height: 33px;
+}

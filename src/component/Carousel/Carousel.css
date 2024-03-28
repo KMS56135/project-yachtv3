@@ -14,6 +14,11 @@
     gap: 40px;
 }
 
+.carousel-image-wrapper {
+    border: 1px solid var(--zinc-300);
+    padding: 10px;
+}
+
 .carousel-image {
     display: flex;
     flex-direction: column;
@@ -23,9 +28,6 @@
     position: absolute; /* Исправлено позиционирование для корректной анимации */
 }
 
-.carousel-image img {
-    flex-grow: 1;
-}
 
 .carousel-image.active {
     opacity: 1; /* Отображение активного изображения */
@@ -33,11 +35,22 @@
 }
 
 .carousel-text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-title {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.carousel-description {
+    font-size: 15px;
+    color: var(--text-description);
 }
 
 .prev,
@@ -61,16 +74,15 @@
 
 @media (min-width: 768px) {
     /* Специфичные стили для планшетов и выше */
-    .carousel-images {
-        width: 50%;
-    }
+
 }
 
 @media (min-width: 1024px) {
     .carousel-images {
         transition: none;
-        width: 100%;
+        align-items: flex-start;
         justify-content: center;
+        min-width: 340px
     }
 
     .carousel-image {
@@ -81,6 +93,9 @@
         min-width: 340px; /* Распределение по ширине для трех изображений */
     }
 
+    .carousel-image img {
+        height: 243px;
+    }
 
     .prev {
         display: none;
