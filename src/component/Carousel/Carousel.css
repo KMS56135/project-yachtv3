@@ -1,37 +1,43 @@
+/* Базовые стили карусели */
 .carousel {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+    /* position: relative; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-images {
-    overflow: hidden;
+    width: 340px;
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+    gap: 40px;
 }
 
 .carousel-image {
-    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%; /* Гарантируем, что каждое изображение займет полную ширину карусели */
     transition: opacity 0.5s ease;
-    display: none;
-}
-
-.carousel-image.active {
-    display: block;
-    opacity: 1;
+    opacity: 0; /* Скрытие неактивных изображений */
+    position: absolute; /* Исправлено позиционирование для корректной анимации */
 }
 
 .carousel-image img {
-    width: 100%;
-    height: auto;
+    flex-grow: 1;
+}
+
+.carousel-image.active {
+    opacity: 1; /* Отображение активного изображения */
+    position: relative; /* Исправлено для активного состояния */
 }
 
 .carousel-text {
-    color: black;
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
     width: 100%;
-}
-
-.navigation-dots {
-    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .prev,
@@ -41,16 +47,45 @@
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
-    color: #333;
-    font-size: 16px;
-    padding: 10px;
     cursor: pointer;
+    padding: 10px;
+    z-index: 2;
 }
 
 .prev {
     left: 10px;
 }
-
 .next {
     right: 10px;
+}
+
+@media (min-width: 768px) {
+    /* Специфичные стили для планшетов и выше */
+    .carousel-images {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-images {
+        transition: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .carousel-image {
+        display: flex;
+        justify-content: center;
+        position: relative; /* Исправление для десктоп версии */
+        opacity: 1; /* Все изображения видны */
+        min-width: 340px; /* Распределение по ширине для трех изображений */
+    }
+
+
+    .prev {
+        display: none;
+    }
+    .next {
+        display: none;
+    }
 }
