@@ -1,13 +1,61 @@
 import './Services.css';
+import BedroomChildOutlinedIcon from '@mui/icons-material/BedroomChildOutlined';
+import ModeFanOffOutlinedIcon from '@mui/icons-material/ModeFanOffOutlined';
+import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import promo from '../../assets/images/Services/promo-382x382.png'
 
-const bed = <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M19.5,2H4.5C2.019,2,0,4.019,0,6.5v15c0,.276,.224,.5,.5,.5s.5-.224,.5-.5v-2.5H23v2.5c0,.276,.224,.5,.5,.5s.5-.224,.5-.5V6.5c0-2.481-2.019-4.5-4.5-4.5ZM4.5,3h15c1.93,0,3.5,1.57,3.5,3.5v7.5h-2v-1.5c0-1.93-1.57-3.5-3.5-3.5h-2.5c-1.272,0-2.387,.682-3,1.699-.613-1.017-1.728-1.699-3-1.699h-2.5c-1.93,0-3.5,1.57-3.5,3.5v1.5H1V6.5c0-1.93,1.57-3.5,3.5-3.5ZM12.5,14v-1.5c0-1.378,1.121-2.5,2.5-2.5h2.5c1.379,0,2.5,1.122,2.5,2.5v1.5h-7.5Zm-8.5,0v-1.5c0-1.378,1.122-2.5,2.5-2.5h2.5c1.378,0,2.5,1.122,2.5,2.5v1.5H4Zm-3,4v-3H23v3H1Z"/></svg>;
 
 function Services() {
     return ( 
-        <>
+        <>  
             <div className="services bg-bgServices">
-                <div className='services__icon'>
-                    {bed}
+                <div className='page'>
+                    <div className='services__wrapper flex flex-col gap-y-5 tablet:flex-row gap-x-5 '>
+                        <div className='flex flex-col gap-y-5'>
+                            <div className='services__content flex flex-col items-center'>
+                                <div className='services__icon-wrapper'>
+                                    <div className='services__icon'>
+                                        <BedroomChildOutlinedIcon  sx={{ fontSize: 33 }}/>
+                                    </div>
+                                </div>
+                                <h2 className='services__title font-taviraj'>Двуспальная кровать и телевизор</h2>
+                                <p className='services__description font-taviraj'>Все наши яхты комфортабельно обставлены двумя односпальными и двуспальными кроватями и оснащены спутниковым телевидением.</p>
+                            </div>
+                            <div className='services__content flex flex-col items-center'>
+                                <div className='services__icon-wrapper'>
+                                    <div className='services__icon'>
+                                        <ModeFanOffOutlinedIcon sx={{ fontSize: 33 }}/>
+                                    </div>
+                                </div>
+                                <h2 className='services__title font-taviraj'>Кондиционер</h2>
+                                <p className='services__description font-taviraj'>Наслаждайтесь чартером даже в очень жаркую погоду благодаря нашему первоклассному кондиционеру.</p>
+                            </div>
+                        </div>
+                        <div className='services_image inline-block self-center'>
+                            <img className='img hidden tablet:block w-full' src={promo}></img>
+                        </div>
+                        <div className='flex flex-col gap-y-5 justify-between'>
+                            <div className='services__content flex flex-col items-center'>
+                                <div className='services__icon-wrapper'>
+                                    <div className='services__icon'>
+                                        <BathtubOutlinedIcon  sx={{ fontSize: 33 }}/>
+                                    </div>
+                                </div>
+                                <h2 className='services__title font-taviraj'>Большие Ванные Комнаты</h2>
+                                <p className='services__description font-taviraj'>Все наши яхты имеют просторные, уютные и стильные ванные комнаты, которые позволят вам расслабиться и прекрасно провести время.</p>
+                            </div>
+                            <div className='services__content flex flex-col items-center '>
+                                <div className='services__icon-wrapper'>
+                                    <div className='services__icon'>
+                                        <MenuBookIcon  sx={{ fontSize: 33 }}/>
+                                    </div>
+                                </div>
+                                <h2 className='services__title font-taviraj'>Ресторан</h2>
+                                <p className='services__description font-taviraj'>Мы регулярно подаем свежие органические блюда и освежающие напитки для лучшего кулинарного впечатления.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

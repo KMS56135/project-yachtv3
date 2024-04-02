@@ -2,8 +2,73 @@
     
 }
 
+.services__wrapper {
+    padding: 50px 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px */
+}
+
+.services__content {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.services__icon-wrapper {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 10px;
+    background-color: #bfdbfe;
+    position: relative;
+}
+
 .services__icon {
-    background-image: url(../../assets/images/Services/bed-alt.svg);
-    width: 33px;
-    height: 33px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.services__title {
+    font-size: 18px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.services__description {
+    font-size: 15px;
+    color: var(--text-description);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services__description:last-child {
+
+    margin-bottom: 0px;
+}
+
+.services_image {
+    max-width: 100%;
+}
+
+
+
+@media screen and (min-width: 766px) {
+    .services__wrapper {
+        padding: 90px 0;
+        width: 100%;
+        /* flex-direction: row;
+        align-items: flex-start;
+        gap: 0; */
+        /* row-gap: 50px; */
+    }
+
+    .services__content {
+        /* display: inline-flex;
+        flex-direction: column; */
+        /* width: 50%; */
+    }
 }

@@ -14,6 +14,8 @@ module.exports = {
     },
     colors: {
         bgServices: '#eef2ff',
+        textOverline: '#fff',
+        white: '#fff',
     },
 
     extend: {
@@ -21,6 +23,9 @@ module.exports = {
         poppins: ['Poppins', 'serif'],
         taviraj: ['Taviraj', 'serif'],
       },
+      backgroundImage: {
+        paralax: "url('/src/assets/images/Paralax/parallax-2.jpg')",
+      }
     },
   },
   plugins: [],

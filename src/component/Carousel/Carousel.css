@@ -56,8 +56,6 @@
 .prev,
 .next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     cursor: pointer;
@@ -66,10 +64,14 @@
 }
 
 .prev {
-    left: 10px;
+    top: 40%;
+    left: 30px;
+    transform: translate3d(-50%, -50%, 0);
 }
 .next {
-    right: 10px;
+    top: 40%;
+    right: 30px;
+    transform: translate3d(50%, -50%, 0);
 }
 
 @media (min-width: 768px) {
