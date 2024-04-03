@@ -1,4 +1,4 @@
-import paralax from '../../assets/images/Paralax/parallax-2.jpg'
+
 
 function Paralax ( ) {
     return (
