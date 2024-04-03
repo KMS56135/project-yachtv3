@@ -14,7 +14,7 @@ module.exports = {
     },
     colors: {
         bgServices: '#eef2ff',
-        textOverline: '#fff',
+        textOverline: '#d4d4d8',
         white: '#fff',
     },
 
