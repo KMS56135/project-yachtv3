@@ -5,8 +5,6 @@ import Carousel from '../Carousel/Carousel'
 
 
 function Offers ()  {
-
-    
     return (
         <>
             <div className="offers offers--padding-y">

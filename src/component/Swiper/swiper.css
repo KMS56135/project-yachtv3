@@ -2,14 +2,13 @@
 .swiper {
     position: relative;
     width: 100%;
-    margin-top: 10px;
 }
 
 .swiper__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 373px; /* Высота под размер твоих картинок */
+    height: 100vh; /* Высота под размер моих картинок */
 }
 
 .swiper__slide-content {
@@ -39,7 +38,6 @@
 
 .swiper__slide-title {
     font-family: 'taviraj', 'serif';
-    font-size: 32px;
     color: var(--white);
     text-align: center;
 }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
+import PricingList from "../../templates/PricingList/PricingList"
 
 // Компонент для отображения отдельной ссылки
 function LinkBurger({ url, text, onClick }) {
   return (
-    <a href={url} className="font-poppins block px-4 py-3 text-gray-800 hover:bg-gray-200 w-full text-center" onClick={onClick}>
+    <Link to={url} className="font-poppins block px-4 py-3 text-gray-800 hover:bg-gray-200 w-full text-center" onClick={onClick}>
       {text}
-    </a>
+    </Link>
   );
 }
 
@@ -17,14 +19,14 @@ const BurgerMenu = () => {
   };
 
   const links = [
-    { text: "Home", url: "#" },
-    { text: "Menu", url: "#" },
-    { text: "About", url: "#" },
-    { text: "Contact", url: "#" },
+    { text: "Главная", url: "#" },
+    { text: "Сервис", url: "/pricinglist" },
+    { text: "Галерея", url: "#" },
+    { text: "Ивенты", url: "#" },
   ];
 
   return (
-    <div className="relative tablet:hidden">
+    <div className="relative desktop:hidden ">
       <button
         onClick={toggleMenu}
         className="text-gray-800 focus:outline-none focus:text-gray-500"
@@ -38,7 +40,7 @@ const BurgerMenu = () => {
       {isOpen && (
         <div className="fixed inset-0 z-50">
           <div className="absolute inset-0 bg-black opacity-50" onClick={toggleMenu}></div>
-          <div className="relative bg-white w-1/2 h-full">
+          <div className="relative bg-white w-1/2 h-full opacity-55">
             {/* Закрытие меню при клике на полупрозрачный фон */}
             {links.map((link, index) => (
               <LinkBurger key={index} url={link.url} text={link.text} onClick={toggleMenu} />
