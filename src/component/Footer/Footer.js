@@ -7,7 +7,7 @@ import AddToDriveOutlinedIcon from '@mui/icons-material/AddToDriveOutlined';
 
 function Footer() {
     return (
-        <div className="bg-bgFooter bg-cover pt-[50px] py-[20px]">
+        <div className="bg-bgFooter bg-cover pt-[50px] bg-center py-[20px]">
             <div className='page'>
                 <div className='mb-[40px]'>
                     <div className='flex justify-center mb-[15px]'>
