@@ -7,7 +7,8 @@ import {
   createBrowserRouter, RouterProvider,
 } from 'react-router-dom';
 import PricingList from './templates/PricingList/PricingList'
-
+import Masonry from './templates/Masonry/Masonry'
+import ContactUs from './templates/ContactUs/ContactUs';
 
 const router = createBrowserRouter ([
   {
@@ -17,7 +18,15 @@ const router = createBrowserRouter ([
   {
     path: '/pricinglist',
     element: <PricingList/>
-  }
+  },
+  {
+    path: '/Masonry',
+    element: <Masonry/>,
+  },
+  {
+    path: '/ContactUs',
+    element: <ContactUs/>,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

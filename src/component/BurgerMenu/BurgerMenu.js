@@ -19,10 +19,10 @@ const BurgerMenu = () => {
   };
 
   const links = [
-    { text: "Главная", url: "#" },
+    { text: "Главная", url: "/" },
     { text: "Сервис", url: "/pricinglist" },
-    { text: "Галерея", url: "#" },
-    { text: "Ивенты", url: "#" },
+    { text: "Галерея", url: "/Masonry" },
+    { text: "Связаться с нами", url: "/ContactUs" },
   ];
 
   return (

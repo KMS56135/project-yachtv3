@@ -4,7 +4,7 @@ import LocalPostOfficeOutlinedIcon from '@mui/icons-material/LocalPostOfficeOutl
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import AddToDriveOutlinedIcon from '@mui/icons-material/AddToDriveOutlined';
-
+import {Link} from "react-router-dom";
 function Footer() {
     return (
         <div className="bg-bgFooter bg-cover pt-[50px] bg-center py-[20px]">
@@ -13,16 +13,16 @@ function Footer() {
                     <div className='flex justify-center mb-[15px]'>
                         <ul className="list-none text-white flex gap-[23px] flex-wrap justify-center">
                             <li className=''>
-                                <a className='hover:text-black' href=''>О нас</a>
+                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/'>Главная</Link>
                             </li>
                             <li>
-                                <a  className='hover:text-black' href=''>События</a>
+                                <Link  className='hover:text-black hover:transition duration-300 ease-in-out' to='/pricinglist'>Сервис</Link>
                             </li>
                             <li className=''>
-                                <a className='hover:text-black' href=''>Галерея</a>
+                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/Masonry'>Галерея</Link>
                             </li>
                             <li>
-                                <a className='hover:text-black' href=''>Связаться с нами</a>
+                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/ContactUs'>Связаться с нами</Link>
                             </li>                           
                         </ul>
                     </div>
@@ -52,17 +52,17 @@ function Footer() {
                                 <div className=''>
                                     <ul className='flex justify-between tablet:justify-end gap-[30px]'>
                                         <li>
-                                            <a href="" className='hover:text-black'>
+                                            <a href="" className='hover:text-black hover:transition duration-300 ease-in-out'>
                                                 <FacebookOutlinedIcon/>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" className='hover:text-black'>
+                                            <a href="" className='hover:text-black hover:transition duration-300 ease-in-out'>
                                                 <SendOutlinedIcon/>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="" className='hover:text-black'>
+                                            <a href="" className='hover:text-black hover:transition duration-300 ease-in-out'>
                                                 <AddToDriveOutlinedIcon/>
                                             </a>
                                         </li>

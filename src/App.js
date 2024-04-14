@@ -3,10 +3,11 @@ import Swiper from './component/Swiper/Swiper';
 import Offers from './component/Offers/Offers';
 import Services from './component/Services/Services'
 import Paralax from './component/Paralax/Paralax';
-import slide1 from './assets/images/Swiper/slide-1.jpg'
-import slide2 from './assets/images/Swiper/slide-2.jpg'
+import slide1 from './assets/images/Swiper/slide-1.jpg';
+import slide2 from './assets/images/Swiper/slide-2.jpg';
 import './App.css';
-import React from 'react'
+import './index.css';
+import React from 'react';
 import Advantages from './component/Advantages/Advantages';
 import Footer from './component/Footer/Footer';
 
