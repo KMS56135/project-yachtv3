@@ -94,7 +94,7 @@ export function GalleryWithTab() {
       },
     ];
     return (
-      <Tabs value="html">
+      <Tabs value="more">
         <TabsHeader>
           {data.map(({ label, value }) => (
             <Tab key={value} value={value}>
