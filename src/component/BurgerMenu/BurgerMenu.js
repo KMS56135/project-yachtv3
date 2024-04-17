@@ -26,15 +26,15 @@ const BurgerMenu = () => {
   ];
 
   return (
-    <div className="relative desktop:hidden ">
+    <div className="relative desktop:hidden z-[100]">
       <button
         onClick={toggleMenu}
-        className="text-gray-800 focus:outline-none focus:text-gray-500"
         aria-expanded={isOpen}
+        className="text-gray-800 focus:outline-none focus:text-gray-500 z-[100]"
       >
-        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-transform duration-300 ${isOpen ? 'transform rotate-45 translate-y-1.5' : ''}`}></div>
-        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></div>
-        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-transform duration-300 ${isOpen ? 'transform -rotate-45 -translate-y-1.5' : ''}`}></div>
+        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-transform duration-300 ${isOpen ? 'transform rotate-45 translate-y-1.5 hidden' : ''}`}></div>
+        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100 '}`}></div>
+        <div className={`w-6 h-0.5 bg-gray-800 my-1 transition-transform duration-300 ${isOpen ? 'transform -rotate-45 -translate-y-1.5 hidden' : ''}`}></div>
       </button>
 
       {isOpen && (

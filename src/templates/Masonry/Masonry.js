@@ -33,7 +33,7 @@ import {
 export function GalleryWithTab() {
     const data = [
       {
-        label: "More",
+        label: "Море",
         value: "more",
         images: [
           {
@@ -63,7 +63,7 @@ export function GalleryWithTab() {
         ],
       },
       {
-        label: "Yacht",
+        label: "Яхты",
         value: "yacht",
         images: [
           {
@@ -94,34 +94,38 @@ export function GalleryWithTab() {
       },
     ];
     return (
-      <Tabs value="more">
-        <TabsHeader>
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody className="grid grid-cols-1 gap-4 ">
-          {data.map(({ value, images }) => (
-            <TabPanel
-              className="grid grid-cols-2 gap-4"
-              key={value}
-              value={value}
-            >
-              {images?.map(({ imageLink }, index) => (
-                <div key={index}>
-                  <img
-                    className="h-[310px] w-full max-w-full rounded-lg object-cover object-center"
-                    src={imageLink}
-                    alt="image-photo"
-                  />
-                </div>
+      <div>
+        <Tabs value="more">
+          <TabsHeader className=''>
+            {data.map(({ label, value }) => (
+              <Tab key={value} value={value}>
+                {label}
+              </Tab>
+            ))}
+          </TabsHeader>
+          <div className="">
+            <TabsBody className="grid grid-cols-1 gap-4">
+              {data.map(({ value, images }) => (
+                <TabPanel
+                  className="tablet:grid tablet:grid-cols-2 tablet:gap-4 flex flex-col gap-[20px] "
+                  key={value}
+                  value={value}
+                >
+                  {images?.map(({ imageLink }, index) => (
+                    <div key={index} className="flex">
+                      <img
+                        className="h-[310px] w-full max-w-full rounded-lg object-cover object-center flex-shrink-0"
+                        src={imageLink}
+                        alt="image-photo"
+                      />
+                    </div>
+                  ))}
+                </TabPanel>
               ))}
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
+            </TabsBody>
+          </div>
+        </Tabs>
+      </div>
     );
   }
 
