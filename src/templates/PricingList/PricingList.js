@@ -4,6 +4,7 @@ import pricing1 from '../../assets/images/PricingList/pricing-1-346x229.jpg';
 import pricing2 from '../../assets/images/PricingList/pricing-2-346x229.jpg';
 import pricing3 from '../../assets/images/PricingList/pricing-3-346x229.jpg';
 import Footer from '../../component/Footer/Footer';
+import {Link} from "react-router-dom";
 // import BgHeader from "../../component/BgHeader/BgHeader";
 function PricingList() {
     return (
@@ -52,13 +53,13 @@ function PricingList() {
                                     <li>4 <span className="text-textDescription">пассажира</span></li>
                                     <li>1 <span className="text-textDescription">двигатель</span></li>
                                 </ul>
-                                <a className="mt-[30px] py-[20px] px-[25px]
+                                <Link className="mt-[30px] py-[20px] px-[25px]
                                 inline-block text-[14px] leading-[2px] text-white
                                 font-normal border-solid border-2 tracking-[0.1em] uppercase
                                 whitespace-nowrap text-center cursor-pointer truncate align-middle
                                 transition-[all 250ms ease-in-out]
                                 transition ease-in-out delay-150 bg-blue-300
-                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " href=''>Добавить в корзину</a>
+                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " to='/ContactUs'>Забронировать</Link>
                             </div>
                         </div>
                         <div className="max-w-[346px] ml-auto mr-auto rounded-[6px] shadow-[3px_6px_6px_0_rgba(0,0,0,0.11)] bg-bgServices">
@@ -89,13 +90,13 @@ function PricingList() {
                                     <li>8 <span className="text-textDescription">пассажиров</span></li>
                                     <li>2 <span className="text-textDescription">двигателя</span></li>
                                 </ul>
-                                <a className="mt-[30px] py-[20px] px-[25px]
+                                <Link className="mt-[30px] py-[20px] px-[25px]
                                 inline-block text-[14px] leading-[2px] text-white
                                 font-normal border-solid border-2 tracking-[0.1em] uppercase
                                 whitespace-nowrap text-center cursor-pointer truncate align-middle
                                 transition-[all 250ms ease-in-out]
                                 transition ease-in-out delay-150 bg-blue-300
-                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " href=''>Добавить в корзину</a>
+                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " to='/ContactUs'>Забронировать</Link>
                             </div>
                         </div>
                         <div className="max-w-[346px] ml-auto mr-auto rounded-[6px] shadow-[3px_6px_6px_0_rgba(0,0,0,0.11)] bg-bgServices">
@@ -126,13 +127,13 @@ function PricingList() {
                                     <li>4 <span className="text-textDescription">пассажира</span></li>
                                     <li>1 <span className="text-textDescription">двигатель</span></li>
                                 </ul>
-                                <a className="mt-[30px] py-[20px] px-[25px]
+                                <Link className="mt-[30px] py-[20px] px-[25px]
                                 inline-block text-[14px] leading-[2px] text-white
                                 font-normal border-solid border-2 tracking-[0.1em] uppercase
                                 whitespace-nowrap text-center cursor-pointer truncate align-middle
                                 transition-[all 250ms ease-in-out]
                                 transition ease-in-out delay-150 bg-blue-300
-                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " href=''>Добавить в корзину</a>
+                                 hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 " to='/ContactUs'>Забронировать</Link>
                             </div>
                         </div>
                     </div>
