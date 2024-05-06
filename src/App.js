@@ -10,7 +10,6 @@ import './index.css';
 import React from 'react';
 import Advantages from './component/Advantages/Advantages';
 import Footer from './component/Footer/Footer';
-
 function App() {
   const items = [
     <div className="swiper__slide-content">

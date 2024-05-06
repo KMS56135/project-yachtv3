@@ -7,50 +7,50 @@ import AddToDriveOutlinedIcon from '@mui/icons-material/AddToDriveOutlined';
 import {Link} from "react-router-dom";
 function Footer() {
     return (
-        <div className="bg-bgFooter bg-cover pt-[50px] bg-center py-[20px]">
+        <div className="bg-bgFooter bg-center">
             <div className='page'>
-                <div className='mb-[40px]'>
-                    <div className='flex justify-center mb-[15px]'>
-                        <ul className="list-none text-white flex gap-[23px] flex-wrap justify-center">
-                            <li className=''>
-                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/'>Главная</Link>
-                            </li>
-                            <li>
-                                <Link  className='hover:text-black hover:transition duration-300 ease-in-out' to='/pricinglist'>Сервис</Link>
-                            </li>
-                            <li className=''>
-                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/Masonry'>Галерея</Link>
-                            </li>
-                            <li>
-                                <Link className='hover:text-black hover:transition duration-300 ease-in-out' to='/ContactUs'>Связаться с нами</Link>
-                            </li>                           
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className='text-white text-center text-[20px] mb-[10px]'>Наши контакты</h3>
-                        <div className='flex flex-col items-center gap-[15px]'>
-                            <div className='text-white  hover:text-black'>
-                                <div className='flex'>
-                                    <p className='text-center relative'>Сильван Авеню, 523, 5-й этаж Маунтин-Вью, Калифорния 94041 США
-                                        <LocationOnOutlinedIcon className='absolute top-0 block left-[-23px] right-0'/>
-                                    </p>
-                                </div>
-                            </div >
-                            <div className='text-white flex items-center  hover:text-black'>
-                                <div className='flex gap-3'>
-                                    <LocalPhoneOutlinedIcon/>
-                                    <a href="tel:+184412345678" className='text-white block hover:text-black'>+1 844 123 456 78</a>
-                                </div>
+                <div className='py-[15px] grid grid-cols-1 tablet:grid-cols-2'>
+                    <nav className='grid grid-cols-4 justify-items-center gap-x-3 tablet:flex tablet:flex-col tablet:text-center tablet:gap-3 tablet:items-start'>
+                        <h2 className='text-[20px] mb-[10px] text-white col-span-4 justify-self-center'>Навигация</h2>
+                        {[
+                            [ 'Главная', '/' ],
+                            ['Сервис', '/pricinglist'],
+                            ['Галерея', '/Masonry'],
+                            ['Связаться с нами', '/ContactUs']
+                        ].map(([title, url]) => (
+                            <div className='text-center'>
+                                <Link to={url} className='text-white hover:text-black hover:transition duration-300 ease-in-out'>{title}</Link>
                             </div>
-                            <div className='text-white flex '>
-                                <div className='flex  gap-3  hover:text-black'>
-                                    <LocalPostOfficeOutlinedIcon/>
-                                    <a href="mailto:info@demolink.org" className='text-white block hover:text-black'>info@demolink.org</a>
-                                </div>
-                            </div>
-                            <div className='text-white'>
+                        ))}
+                    </nav>
+                    <div className='grid grid-cols-1'>
+                        <h3 className='text-white text-[20px] mb-[20px] justify-self-center'>Наши контакты</h3>
+                        <div className='grid grid-cols-4 grid-rows-3 justify-items-center'>
+                            <div className='text-white text-center hover:text-black col-span-4'>
                                 <div className=''>
-                                    <ul className='flex justify-between tablet:justify-end gap-[30px]'>
+                                    <LocationOnOutlinedIcon className=''/>
+                                    Сильван Авеню, 523, 5-й этаж Маунтин-Вью, Калифорния 94041 США                                  
+                                </div>
+                            </div>
+                            <div className='text-white text-center hover:text-black col-span-4 place-self-center'>
+                                <div className=''>
+                                    <a href="tel:+184412345678" className='text-white block hover:text-black'>
+                                        <LocalPhoneOutlinedIcon/>
+                                        +1 844 123 456 78
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='text-white col-span-4 place-self-center'>
+                                <div className='hover:text-black'>
+                                    <a href="mailto:info@demolink.org" className='text-white block hover:text-black'>
+                                        <LocalPostOfficeOutlinedIcon/>
+                                        info@demolink.org
+                                    </a>
+                                </div>
+                            </div>
+                            {/* <div className='text-white'>
+                                <div className=''>
+                                    <ul className=''>
                                         <li>
                                             <a href="" className='hover:text-black hover:transition duration-300 ease-in-out'>
                                                 <FacebookOutlinedIcon/>
@@ -68,7 +68,7 @@ function Footer() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>  
+                            </div>   */}
                         </div>
                     </div>
                 </div>
