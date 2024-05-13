@@ -22,7 +22,7 @@ function PricingList() {
                 <div className="page">
                     <div>
                         <h2 className="text-[22px] tablet:text-[29px] desktop:text-[32px] text-center mb-[14px]">Наши тарифные планы</h2>
-                        <p className="max-w-[600px] mr-auto ml-auto text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor Tur adipiscing elit, sed do. semantic;users, seamless beta-test</p>
+                        <p className="max-w-[600px] mr-auto ml-auto text-center"></p>
                     </div>
                     <div className="mt-[30px] tablet:mt-[40px] flex flex-wrap items-center gap-y-[30px]">
                         <div className="max-w-[346px] ml-auto mr-auto rounded-[6px] shadow-[3px_6px_6px_0_rgba(0,0,0,0.11)] bg-bgServices">

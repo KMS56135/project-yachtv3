@@ -16,8 +16,8 @@ function ContactUs() {
             </div>
             <section className="bg-bgServices bg-cover bg-center py-[50px] mt-[210px] tablet:mt-[190px] desktop:mt-[180px]">
                 <div className="page">
-                    <div className="flex flex-wrap">
-                        <div className="w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
+                    <div className="flex flex-wrap  justify-around">
+                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
                             <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Телефон</h4>
                             <ul className="mt-[12px] text-[15px]">
                                 <li>
@@ -25,13 +25,13 @@ function ContactUs() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
+                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
                             <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Aдресс</h4>
                             <div className="mt-[12px] text-[15px]">
                                 <a href="" className="text-textDescription">523 Sylvan Ave, 5th Floor <br/>Mountain View, CA 94041 USA</a>
                             </div>
                         </div>
-                        <div className="w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
+                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
                             <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Почта</h4>
                             <ul className="mt-[12px] text-[15px]">
                                 <li>

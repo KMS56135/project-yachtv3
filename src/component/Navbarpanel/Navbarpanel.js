@@ -21,16 +21,16 @@ function NavbarPanel() {
                     <div className="w-full max-w-[1170px] ml-auto mr-auto py-[23px] flex justify-center gap-[23px]
                     border-y-[1px] border-navbarBorder text-[20px] text-white font-taviraj">
                         <div>
-                            <Link to='/' className="hover:text-black hover:transition duration-300 ease-in-out">Главная</Link>
+                            <Link to='/' className="hover:text-cyan-600 hover:transition duration-300 ease-in-out">Главная</Link>
                         </div>
                         <div>
-                            <Link to='/pricinglist' className="hover:text-black hover:transition duration-300 ease-in-out">Сервис</Link>
+                            <Link to='/pricinglist' className="hover:text-cyan-600 hover:transition duration-300 ease-in-out">Сервис</Link>
                         </div>
                         <div>
-                            <Link to='/Masonry' className="hover:text-black hover:transition duration-300 ease-in-out">Галерея</Link>
+                            <Link to='/Masonry' className="hover:text-cyan-600 hover:transition duration-300 ease-in-out">Галерея</Link>
                         </div>
                         <div>
-                            <Link to='/ContactUs' className="hover:text-black hover:transition duration-300 ease-in-out">Связать с нами</Link>
+                            <Link to='/ContactUs' className="hover:text-cyan-600 hover:transition duration-300 ease-in-out">Связать с нами</Link>
                         </div>
                     </div>
                 </div>

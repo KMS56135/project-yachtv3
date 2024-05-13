@@ -19,30 +19,30 @@ function Footer() {
                             ['Связаться с нами', '/ContactUs']
                         ].map(([title, url]) => (
                             <div className='text-center'>
-                                <Link to={url} className='text-white hover:text-black hover:transition duration-300 ease-in-out'>{title}</Link>
+                                <Link to={url} className='text-white hover:text-cyan-600 hover:transition duration-300 ease-in-out'>{title}</Link>
                             </div>
                         ))}
                     </nav>
                     <div className='grid grid-cols-1'>
                         <h3 className='text-white text-[20px] mb-[20px] justify-self-center'>Наши контакты</h3>
                         <div className='grid grid-cols-4 grid-rows-3 justify-items-center'>
-                            <div className='text-white text-center hover:text-black col-span-4'>
+                            <div className='text-white text-center hover:text-cyan-600 col-span-4'>
                                 <div className=''>
                                     <LocationOnOutlinedIcon className=''/>
                                     Сильван Авеню, 523, 5-й этаж Маунтин-Вью, Калифорния 94041 США                                  
                                 </div>
                             </div>
-                            <div className='text-white text-center hover:text-black col-span-4 place-self-center'>
+                            <div className='text-white text-center hover:text-cyan-600 col-span-4 place-self-center'>
                                 <div className=''>
-                                    <a href="tel:+184412345678" className='text-white block hover:text-black'>
+                                    <a href="tel:+184412345678" className='text-white block hover:text-cyan-600'>
                                         <LocalPhoneOutlinedIcon/>
                                         +1 844 123 456 78
                                     </a>
                                 </div>
                             </div>
                             <div className='text-white col-span-4 place-self-center'>
-                                <div className='hover:text-black'>
-                                    <a href="mailto:info@demolink.org" className='text-white block hover:text-black'>
+                                <div className='hover:text-cyan-600'>
+                                    <a href="mailto:info@demolink.org" className='text-white block hover:text-cyan-600'>
                                         <LocalPostOfficeOutlinedIcon/>
                                         info@demolink.org
                                     </a>
