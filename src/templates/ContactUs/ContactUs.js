@@ -1,123 +1,77 @@
 import NavbarPanel from "../../component/Navbarpanel/Navbarpanel"
 import Footer from "../../component/Footer/Footer"
-import BgPricingList from '../../assets/images/PricingList/breadcrumbs-bg.jpg';
+import { useSpring, animated } from 'react-spring';
 
 function ContactUs() {
-    return (
-        <>
-            <NavbarPanel/>
-            <div className='absolute top-0 bottom-0 right-0 left-[-2px] h-max'>
-                <img src={BgPricingList} className="object-cover object-center h-[600px] w-full"></img>
-            </div>
-            <div className="page flex">
-                <p className="m-auto mt-[350px] z-10 text-mobileTitle
-                    tablet:text-tabletTitle desktop:text-desktopTitle text-nowrap text-white font-taviraj">Связаться с нами
-                </p>
-            </div>
-            <section className="bg-bgServices bg-cover bg-center py-[50px] mt-[210px] tablet:mt-[190px] desktop:mt-[180px]">
-                <div className="page">
-                    <div className="flex flex-wrap  justify-around">
-                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
-                            <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Телефон</h4>
-                            <ul className="mt-[12px] text-[15px]">
-                                <li>
-                                    <a href="tel:+14099875874" className="text-textDescription">+1 (409) 987–5874</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
-                            <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Aдресс</h4>
-                            <div className="mt-[12px] text-[15px]">
-                                <a href="" className="text-textDescription">523 Sylvan Ave, 5th Floor <br/>Mountain View, CA 94041 USA</a>
-                            </div>
-                        </div>
-                        <div className="border pt-[15px] pb-[15px] border-gray-300 w-full min-h-[1px] pr-[15px] pl-[15px] mb-[30px] tablet:text-center tablet:flex-shrink-0 tablet:flex-grow-0 tablet:basis-[33%] tablet:max-w-[33%]">
-                            <h4 className="text-[18px] font-taviraj tablet:text-[20px] desktop:text-[22px]">Почта</h4>
-                            <ul className="mt-[12px] text-[15px]">
-                                <li>
-                                    <a href="mailto:info@demolink.org" className="text-textDescription">info@demolink.org</a>
-                                </li>
-                            </ul>
-                        </div>
+  const titleAnimation = useSpring({
+    from: { opacity: 0, transform: 'translate3d(-150px, 0, 0)' },
+    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+    config: { duration: 700 }
+  });
+
+  const paragraphAnimation = useSpring({
+    from: { opacity: 0, transform: 'translate3d(-150px, 0, 0)' },
+    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+    config: { duration: 700, delay: 200 }
+  });
+
+  const slideInAnimation = useSpring({
+    from: { opacity: 0, transform: 'translateX(100%)' },
+    to: { opacity: 1, transform: 'translateX(0)' },
+    config: { duration: 700, delay: 400 }
+  });
+
+  return (
+    <>
+      <NavbarPanel/>
+      <div className='relative top-0 bottom-0 right-0 left-[-2px] h-max '>
+        <div className="bg-[url('/src/assets/images/PricingList/bg-yacht.jpg')] h-[670px] animated-bg">
+          <div className="absolute top-[30%] left-[30px] w-[90%] tablet:w-[75%]  desktop:w-[55%] desktop:top-[50%]">
+            <animated.h2 style={titleAnimation} className="text-[30px] tablet:text-[46px] desktop:text-[50px] text-white font-bold mb-[10px] tracking-wider text-shadow-lg">
+              Забронируйте свою яхту сегодня
+            </animated.h2>
+            <animated.p style={paragraphAnimation} className="text-[18px] tablet:text-[23px] desktop:text-[23px] text-white leading-relaxed text-shadow-md">
+              Наша служба поддержки клиентов всегда готова помочь вам в планировании идеального водного приключения. Отправляйтесь в путешествие вашей мечты
+            </animated.p>
+          </div>
+        </div>
+      </div>
+      <section className="py-[60px]">
+        <div className="page">
+            <div>
+                <div className="flex flex-wrap justify-between gap-[30px]">
+                    <div className="w-[90%] tablet:w-[75%]  desktop:w-[55%] desktop:top-[50%] border-b-[1px] pb-[15px] border-blue-gray-400"> 
+                        <div className="mb-[20px] text-[13px] text-[#3a6c8c]">СВЯЖИТЕСЬ С НАМИ</div>
+                        <h3 className="text-[24px] font-medium mb-[20px] tablet:text-[26px] desktop:text-[30px]">Забронируйте своё морское приключение сегодня</h3>
+                        <p className="text-[15px] tablet:text-[19px] desktop:text-[23px] leading-relaxed text-shadow-md">Наша команда поддержки клиентов всегда готова помочь вам с планированием идеального морского приключения.</p>
                     </div>
-                </div>
-            </section>
-            <section className="py-[50px] tablet:py-[80px] tablet:text-left bg-bgServices">
-                <div className="page">
-                    <div className="text-center mb-[20px]">
-                        <p className="text-textDescription">
-                            Мы доступны 24/7 по факсу, электронной почте или по телефону. Вы также можете использовать наш
-                            форма быстрой связи, чтобы задать вопрос о наших яхтах.
-                        </p>
-                    </div>
-                    <div className="py-[20px] px-[20px] bg-white rounded-md shadow-2xl">
-                        <form className="mt-[20px] text-left relative tablet:mt-[30px]">
-                            <div className="flex flex-wrap w-full">
-                                <div className="mb-[20px] relative min-h-[1px] pl-[15px] pr-[15px] w-full tablet:mb-[30px]">
-                                    <div className="flex flex-wrap mr-[-15px] ml-[-15px] text-left w-full">
-                                        <div className="mb-[20px] relative min-h-[1px] pr-[15px] pl-[15px] flex-grow">
-                                            <div className="relative">
-                                                <input type="text" name="name" id='contact-fist-name-2' className="block  min-h-[50px]
-                                                    pt-[10px] bg-transparent border-solid border-b-[2px] border-slate-400 w-full outline-0 focus:border-blue-300" placeholder='First Name'>
-                                                </input>
-                                                <label for='contact-fist-name-2' className="absolute text-left top-[25px] right-0 left-0
-                                                pl-[0px] pr-[0px] text-[14px] z-10"></label> 
-                                            </div>
-                                        </div>
-                                        <div className="mb-[20px] relative min-h-[1px] pr-[15px] pl-[15px] flex-grow">
-                                            <div className="relative">
-                                                <input type="text" name="name" id='contact-fist-name-2' className="block  min-h-[50px]
-                                                    pt-[10px] bg-transparent border-solid border-b-[2px] border-slate-400 w-full outline-0 focus:border-blue-300" placeholder='Last Name'>
-                                                </input>
-                                                <label for='contact-fist-name-2' className="absolute text-left top-[25px] right-0 left-0
-                                                pl-[0px] pr-[0px] text-[14px] z-10"></label> 
-                                            </div>
-                                        </div>
-                                        <div className="mb-[20px] relative  min-h-[1px] pr-[15px] pl-[15px] flex-grow">
-                                            <div className="relative">
-                                                <input type="email" name="email" id='contact-fist-name-2' className="block  min-h-[50px]
-                                                    pt-[10px] bg-transparent border-solid border-b-[2px] border-slate-400 w-full outline-0 focus:border-blue-300" placeholder='E-mail'>
-                                                </input>
-                                                <label for='contact-fist-name-2' className="absolute text-left top-[25px] right-0 left-0
-                                                pl-[0px] pr-[0px] text-[14px] z-10"></label> 
-                                            </div>
-                                        </div>
-                                        <div className="mb-[20px] relative  min-h-[1px] pr-[15px] pl-[15px] flex-grow">
-                                            <div className="relative">
-                                                <input type="number" name="phone" id='contact-fist-name-2' className="block  min-h-[50px]
-                                                    pt-[10px] bg-transparent border-solid border-b-[2px] border-slate-400 w-full outline-0 focus:border-blue-300" placeholder='Phone'>
-                                                </input>
-                                                <label for='contact-fist-name-2' className="absolute text-left top-[25px] right-0 left-0
-                                                pl-[0px] pr-[0px] text-[14px] z-10"></label> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div className="w-full min-h-[1px] relative">
-                                            <div className="relative">
-                                                <label for='contact-message-2' className="absolute text-left top-[25px] right-0 left-0 pl-0 pr-0
-                                                text-[14px] font-normal leading-[24px]"></label>
-                                                <textarea id='contact-message-2' name="phone" required placeholder='Message'
-                                                className="h-[150px] max-h-[238px] min-h-[60px] block w-full bg-transparent
-                                                border-solid border-b-[2px] border-slate-400 outline-0 focus:border-blue-300"></textarea>
-                                            </div>
-                                        </div>
+                    <animated.div className="flex w-full lg:w-max" style={slideInAnimation}>
+                        <div className="py-[20px] px-[10px] bg-[#f2f8fd] grow lg:grow-0 rounded-[5px]">
+                            <h3 className="text-[24px] font-medium mb-[20px] tablet:text-[26px] desktop:text-[30px]">Отправьте нам сообщение</h3>
+                            <form className="flex flex-col flex-wrap justify-center mb-4">
+                                <div className="w-full px-3 mb-4 md:mb-0">
+                                    <label for="name" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Ваше имя:</label>
+                                    <input type="text" id="name" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" />
                                 </div>
-                            </div>
-                            <button className="mt-[30px] py-[20px] px-[25px]
-                                    inline-block text-[14px] leading-[2px] text-white
-                                    font-normal border-solid border-2 tracking-[0.1em] uppercase
-                                    whitespace-nowrap text-center cursor-pointer truncate align-middle
-                                    transition-[all 250ms ease-in-out]
-                                    transition ease-in-out delay-150 bg-blue-300
-                                        hover:-translate-y-1 hover:scale-110 hover:bg-blue-700 duration-300 block" type="submit">Отправить сообщение
-                            </button>
-                        </form>
-                    </div>
+                                <div className="w-full px-3 mb-4 md:mb-0">
+                                    <label for="email" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Ваша почта:</label>
+                                    <input type="email" id="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" />
+                                </div>
+                                <div className="w-full px-3 mb-4 xl:mb-0">
+                                    <label for="message" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Ваше сообщение:</label>
+                                    <textarea id="message" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" rows="5"></textarea>
+                                </div>
+                                <button type="submit" className="desktop:mt-[15px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full xl:w-auto">Отправить</button>
+                            </form>
+                        </div>
+                    </animated.div>
                 </div>
-            </section>
-            <Footer/>
-        </>
-    )
+            </div>
+        </div>
+      </section>
+      <Footer/>
+    </>
+  );
 }
 
 export default ContactUs
