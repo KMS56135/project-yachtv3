@@ -17,7 +17,7 @@ function Masonry() {
   const slideInAnimation = useSpring({
     from: { opacity: 0, transform: 'translate3d(0, 1000px, 0)' },
     to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    config: { duration: 800 }
+    config: { duration: 1000 }
   });
   return (
     <>
