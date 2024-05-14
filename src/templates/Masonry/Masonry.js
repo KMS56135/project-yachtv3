@@ -1,6 +1,5 @@
 import Footer from "../../component/Footer/Footer";
 import NavbarPanel from "../../component/Navbarpanel/Navbarpanel";
-import BgPricingList from '../../assets/images/PricingList/breadcrumbs-bg.jpg';
 import yacht1 from '../../assets/images/Masonry/yacht-1.jpg';
 import yacht2 from '../../assets/images/Masonry/yacht-2.jpg';
 import yacht3 from '../../assets/images/Masonry/yacht-3.jpg';
