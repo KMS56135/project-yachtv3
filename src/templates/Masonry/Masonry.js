@@ -10,7 +10,7 @@ import yacht6 from '../../assets/images/Masonry/yacht-6.jpg';
 import yacht7 from '../../assets/images/Masonry/yacht-7.jpg';
 import yacht8 from '../../assets/images/Masonry/yacht-8.jpg';
 import { useSpring, animated } from 'react-spring';
-
+import bgMasonry from '../../assets/images/Masonry/bg-masonry.jpg';
 function Masonry() {
 
 
@@ -23,7 +23,7 @@ function Masonry() {
     <>
       <NavbarPanel />
       <div className='absolute top-0 bottom-0 right-0 left-[-2px] h-max' style={{ zIndex: -1 }}>
-        <img src={BgPricingList} className="object-cover object-center h-[600px] w-full"></img>
+        <img src={bgMasonry} alt="фон" className="object-cover h-[30rem] w-full"></img>
       </div>
       <section className="">
         <animated.div style={slideInAnimation} className="page flex">
@@ -41,7 +41,7 @@ function Masonry() {
                 <div className=" h-64 overflow-hidden rounded-lg shadow-lg m-4 w-full tablet:w-96 desktop:w-80">
                   <img src={yacht4} alt="Yacht 1" className="w-full h-full object-cover transition duration-300 ease-in-out transform hover:scale-105" />
                 </div>
-                <div className=" h-64 overflow-hidden rounded-lg shadow-lg m-4 :w-full tablet:w-96 desktop:w-80">
+                <div className=" h-64 overflow-hidden rounded-lg shadow-lg m-4 w-full tablet:w-96 desktop:w-80">
                   <img src={yacht5} alt="Yacht 2" className="w-full h-full object-cover transition duration-300 ease-in-out transform hover:scale-105" />
                 </div>
                 <div className=" h-64 overflow-hidden rounded-lg shadow-lg m-4 w-full tablet:w-96 desktop:w-80">
