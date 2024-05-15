@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ce0ff0d.css",
-    "main.js": "/static/js/main.ca03fa36.js",
+    "main.css": "/static/css/main.c585f5bc.css",
+    "main.js": "/static/js/main.bb83b6b5.js",
     "static/js/453.f37a9ffd.chunk.js": "/static/js/453.f37a9ffd.chunk.js",
     "static/media/yacht-8.jpg": "/static/media/yacht-8.d720e1a54e3f142381ca.jpg",
     "static/media/yacht-6.jpg": "/static/media/yacht-6.965a5e71a654dbe5301f.jpg",
@@ -17,6 +17,7 @@
     "static/media/yacht-2.jpg": "/static/media/yacht-2.cdb249f0ce9c0903ef6d.jpg",
     "static/media/slide-1.jpg": "/static/media/slide-1.89a0c5f2c7c655c54fe7.jpg",
     "static/media/Blue Horizon-1920.jpg": "/static/media/Blue Horizon-1920.4504d1c34f8493340449.jpg",
+    "static/media/bg-masonry.jpg": "/static/media/bg-masonry.02abb9e57bc158992a24.jpg",
     "static/media/parallax-2.jpg": "/static/media/parallax-2.75b734604233618a4dca.jpg",
     "static/media/Azure Odyssey-855.jpg": "/static/media/Azure Odyssey-855.cd9a44bb5b8af61f227c.jpg",
     "static/media/Harbor Bliss-1920.jpg": "/static/media/Harbor Bliss-1920.6d16574312bf9a157676.jpg",
@@ -29,18 +30,15 @@
     "static/media/about-3-340x243.jpg": "/static/media/about-3-340x243.9feec3dd2c9c0734a911.jpg",
     "static/media/about-1-340x243.jpg": "/static/media/about-1-340x243.4d6ce752f5b2924e9b36.jpg",
     "static/media/Sunset Serenade-500.jpg": "/static/media/Sunset Serenade-500.8bafcc97ce26826d1bea.jpg",
-    "static/media/pricing-3-346x229.jpg": "/static/media/pricing-3-346x229.6da04e4dfb324022edf2.jpg",
     "static/media/Ocean Serenity-1920.jpg": "/static/media/Ocean Serenity-1920.6f1cf0d908009ef2e2cb.jpg",
     "static/media/footer-bg.jpg": "/static/media/footer-bg.4508ea50bb4b3cae7be7.jpg",
-    "static/media/pricing-1-346x229.jpg": "/static/media/pricing-1-346x229.d64bc1ea63e800dd4bb9.jpg",
-    "static/media/pricing-2-346x229.jpg": "/static/media/pricing-2-346x229.38b61943e7c5cc4c6973.jpg",
     "index.html": "/index.html",
-    "main.7ce0ff0d.css.map": "/static/css/main.7ce0ff0d.css.map",
-    "main.ca03fa36.js.map": "/static/js/main.ca03fa36.js.map",
+    "main.c585f5bc.css.map": "/static/css/main.c585f5bc.css.map",
+    "main.bb83b6b5.js.map": "/static/js/main.bb83b6b5.js.map",
     "453.f37a9ffd.chunk.js.map": "/static/js/453.f37a9ffd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ce0ff0d.css",
-    "static/js/main.ca03fa36.js"
+    "static/css/main.c585f5bc.css",
+    "static/js/main.bb83b6b5.js"
   ]
 }
