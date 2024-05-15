@@ -8,24 +8,24 @@ import yacht5 from '../../assets/images/Masonry/yacht-5.jpg';
 import yacht6 from '../../assets/images/Masonry/yacht-6.jpg';
 import yacht7 from '../../assets/images/Masonry/yacht-7.jpg';
 import yacht8 from '../../assets/images/Masonry/yacht-8.jpg';
-import { useSpring, animated } from 'react-spring';
+// import { useSpring, animated } from 'react-spring';
 import bgMasonry from '../../assets/images/Masonry/bg-masonry.jpg';
 function Masonry() {
 
 
-  const slideInAnimation = useSpring({
-    from: { opacity: 0, transform: 'translate3d(0, 1000px, 0)' },
-    to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    config: { duration: 1000 }
-  });
+  // const slideInAnimation = useSpring({
+  //   from: { opacity: 0, transform: 'translate3d(0, 1000px, 0)' },
+  //   to: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+  //   config: { duration: 1000 }
+  // });
   return (
     <>
       <NavbarPanel />
       <div className='absolute top-0 bottom-0 right-0 left-[-2px] h-max' style={{ zIndex: -1 }}>
         <img src={bgMasonry} alt="фон" className="object-cover h-[30rem] w-full"></img>
       </div>
-      <section className="">
-        <animated.div style={slideInAnimation} className="page flex">
+      <section className="mt-[100px]">
+        <div className="page flex">
           <div className="m-auto mt-[350px] z-10 text-white font-taviraj">
               <div className="flex flex-wrap justify-center mt-8">
                 <div className=" h-64 overflow-hidden rounded-lg shadow-lg m-4 w-full tablet:w-96 desktop:w-80">
@@ -49,7 +49,7 @@ function Masonry() {
     
               </div>
           </div>
-        </animated.div>
+        </div>
       </section>
       <Footer />
     </>
